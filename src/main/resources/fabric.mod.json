@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "immersed",
+  "version": "${version}",
+  "name": "Immersed",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/immersed/icon.png",
+  "environment": "*",
+  "mixins": [
+    "immersed.mixins.json"
+  ],
+  "entrypoints": {
+    "client": [
+      "com.ahtism.immersed.client.ImmersedClient"
+    ],
+    "main": [
+      "com.ahtism.immersed.Immersed"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "modmenu": ">=13.0.1",
+    "owo-lib": ">=0.12.20+1.21.4"
+  }
+}
